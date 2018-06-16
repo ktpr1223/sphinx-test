@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'test-sphinx'
+project = 'sphinx-test'
 copyright = '2018, ktpr1223'
 author = 'ktpr1223'
 
@@ -59,7 +59,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'ja'
+language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -102,7 +102,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'test-sphinxdoc'
+htmlhelp_basename = 'sphinx-testdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -129,7 +129,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'test-sphinx.tex', 'test-sphinx Documentation',
+    (master_doc, 'sphinx-test.tex', 'sphinx-test Documentation',
      'ktpr1223', 'manual'),
 ]
 
@@ -139,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'test-sphinx', 'test-sphinx Documentation',
+    (master_doc, 'sphinx-test', 'sphinx-test Documentation',
      [author], 1)
 ]
 
@@ -150,8 +150,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'test-sphinx', 'test-sphinx Documentation',
-     author, 'test-sphinx', 'One line description of project.',
+    (master_doc, 'sphinx-test', 'sphinx-test Documentation',
+     author, 'sphinx-test', 'One line description of project.',
      'Miscellaneous'),
 ]
 
