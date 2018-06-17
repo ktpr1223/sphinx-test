@@ -6,7 +6,6 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = sphinx-test
 SOURCEDIR     = source
-# BUILDDIR      = build
 BUILDDIR      = .
 
 
@@ -22,5 +21,11 @@ help:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 clean:
-	@echo "Removing everything under 'build'.."
-	@rm -r $(BUILDDIR)/html/ $(BUILDDIR)/doctrees
+	@echo "Removing everything under 'html/ doctrees/ docs'.."
+	# @rm -r $(BUILDDIR)/html/ $(BUILDDIR)/doctrees $(BUILDDIR)/docs/
+	ls | grep -E -v '^Makefile|^source' | xargs rm -r
+
+update: ## clean -> htmlの後に、htmlフォルダ
+	echo "update docs"
+	make clean html
+	cp -r html/* .
