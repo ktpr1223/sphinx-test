@@ -11,7 +11,9 @@ Welcome to sphinx-test's documentation!
    :caption: Contents:
 
    sample/sample
+   sample/hage
 
+   hoge/hoge
 
 Indices and tables
 ==================
